@@ -1,1 +1,1 @@
-# rushxxx.github.io/gkbashkortostan
+# https://rushxxx.github.io/gkbashkortostan
