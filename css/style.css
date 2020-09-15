@@ -215,13 +215,13 @@ a {
 
 .hero_slider {
     margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .hero_slider_pic {
     width: 100%;
     height: 193px;
-    background: url(../img/hero_slider_01.jpg) no-repeat center;
-    background-size: contain;
 }
 
 .hero_slider_item {
@@ -270,8 +270,6 @@ a {
 .meed_pic {
     width: 267px;
     height: 267px;
-    background: url(../img/reward.jpg) no-repeat center;
-    background-size: contain;
     border-radius: 24px 24px 24px 0px;
 }
 /* End meed */
@@ -287,6 +285,8 @@ a {
 
 .rooms_slider {
     margin-top: 48px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .rooms_slider_item {
@@ -299,8 +299,6 @@ a {
 .rooms_slider_pic {
     width: 100%;
     height: 50%;
-    background: url(../img/rooms_slider_01.jpg) no-repeat center;
-    background-size: cover;
 }
 
 .rooms_slider_desc {
@@ -336,14 +334,17 @@ a {
 }
 
 .beauty_switch_item {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    width: 160px;
+    height: 120px;
+    position: relative;
 }
 
 .beauty_switch_button {
-    width: 160px;
-    height: 120px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     padding: 20px;
     border: none;
     border-radius: 0;
@@ -400,6 +401,11 @@ a {
 /* Start news */
 
 .news_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_item {
     width: 30%;
     text-align: center;
 }
@@ -425,6 +431,11 @@ a {
 
 
 /* Start insta */
+
+.insta_slider {
+    display: flex;
+    justify-content: space-between;
+}
 
 .insta_slider_item {
     width: 30%;
