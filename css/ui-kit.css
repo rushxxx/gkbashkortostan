@@ -1,0 +1,99 @@
+/*  headers */
+
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+}
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 120%;
+}
+h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+}
+h5 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 143%;
+}
+
+
+/*  button  */
+
+button {
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+button.large,
+a.large {
+    padding: 16px 40px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+button.medium,
+a.medium {
+    padding: 14px 24px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+button.small,
+a.small {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+
+button.primary,
+a.primary {
+    background-color: #A48100;
+    color: #fff;
+}
+
+button.primary:hover,
+a.primary:hover {
+    background-color: #735A00;
+}
+
+button.secondary,
+a.secondary {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #7E7E7E;
+}
+
+button.secondary:hover,
+a.secondary:hover {
+    background-color: #7E7E7E;
+    color: #fff;
+}
+
+button.ghost,
+a.ghost {
+    background-color: #fff;
+    color: #000;
+}
+
+button.ghost:hover,
+a.ghost:hover {
+    color: #735A00;
+}

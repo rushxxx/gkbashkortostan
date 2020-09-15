@@ -1,0 +1,504 @@
+/* Start fonts */
+
+@font-face {
+    font-family: 'Calibre';
+    src: local('Calibre Regular'), local('Calibre-Regular'),
+        url('../fonts/Calibre-Regular.woff2') format('woff2'),
+        url('../fonts/Calibre-Regular.woff') format('woff'),
+        url('../fonts/Calibre-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Calibre';
+    src: local('Calibre Regular Italic'), local('Calibre-Regular-Italic'),
+        url('../fonts/Calibre-RegularItalic.woff2') format('woff2'),
+        url('../fonts/Calibre-RegularItalic.woff') format('woff'),
+        url('../fonts/Calibre-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+@font-face {
+    font-family: 'Calibre';
+    src: local('Calibre Bold'), local('Calibre-Bold'),
+        url('../fonts/Calibre-Bold.woff2') format('woff2'),
+        url('../fonts/Calibre-Bold.woff') format('woff'),
+        url('../fonts/Calibre-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* End fonts */
+
+
+
+/* Start general style */
+html {
+    box-sizing: border-box;
+    font-family: Calibre;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+section {
+    padding: 64px 0;
+}
+.container {
+    width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.section_title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    color: #4B1600;
+}
+/* End general style */
+
+
+/* Start header */
+
+.header {
+    height: 132px;
+    font-family: Calibre;
+}
+
+.container-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 103px;
+    height: 103px;
+    background: url(../img/logo.png) no-repeat center;
+    background-size: cover;
+}
+
+.header_wrapper{
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header_section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #4B1600;
+}
+
+.logo_text {
+    width: 228px;
+    height: 50px;
+    background: url(../img/logo_text.svg) no-repeat center;
+    background-size: cover;
+}
+
+.header_button {
+    transform: translateY(1px);
+}
+
+.header_menu_list {
+    display: flex;
+}
+
+.header_menu_link {
+    padding: 14px 7px !important; /* ??? */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+/* End header */
+
+
+
+/* Start hero */
+
+.hero {
+    background: url(../img/main_bg.jpg) no-repeat top;
+    background-size: contain;
+}
+
+.hero_form {
+    width: 50%;
+    background-color: rgba(75, 22, 0, 0.75);
+    padding: 32px 64px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.hero_form label {
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+.hero_form_group {
+    width: 100%;
+    margin-top: 12px;
+}
+
+.hero_form_group-half {
+    width: 45%;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.hero_form input {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.hero_form_button {
+    width: 100%;
+    margin-top: 48px;
+}
+
+.hero_slider {
+    margin-top: 100px;
+}
+
+.hero_slider_pic {
+    width: 100%;
+    height: 193px;
+    background: url(../img/hero_slider_01.jpg) no-repeat center;
+    background-size: contain;
+}
+
+.hero_slider_item {
+    width: 30%;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.hero_slider_desc {
+    padding: 32px 32px 23px;
+    text-align: center;
+    color: #4B1600;
+}
+
+.hero_slider_title {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.hero_slider_text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 16px;
+}
+/* End hero */
+
+
+
+/* Start meed */
+
+.meed {
+    background-color: #EDE6CC;
+}
+
+.meed .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.meed_text{
+    width: 30%;
+}
+
+.meed_pic {
+    width: 267px;
+    height: 267px;
+    background: url(../img/reward.jpg) no-repeat center;
+    background-size: contain;
+    border-radius: 24px 24px 24px 0px;
+}
+/* End meed */
+
+
+
+/* Start rooms */
+
+.rooms_desc{
+    font-size: 16px;
+    text-align: center;
+}
+
+.rooms_slider {
+    margin-top: 48px;
+}
+
+.rooms_slider_item {
+    width: 45%;
+    height: 640px;
+    background: #EDE6CC;
+    border: 1px solid #E0E0E0;
+}
+
+.rooms_slider_pic {
+    width: 100%;
+    height: 50%;
+    background: url(../img/rooms_slider_01.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.rooms_slider_desc {
+    padding: 32px 28px;
+    text-align: center;
+}
+
+.rooms_slider_desc button:last-child {
+    margin-left: 32px;
+}
+
+.rooms_slider_text  {
+    margin-top: 48px;
+    line-height: 150%;
+}
+
+.rooms_button {
+    display: block;
+    margin: 60px auto 0;
+
+}
+/* End rooms */
+
+
+
+/* Start beauty */
+
+.beauty_switch_list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 66px;
+}
+
+.beauty_switch_item {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.beauty_switch_button {
+    width: 160px;
+    height: 120px;
+    padding: 20px;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(51,51,51,.5);
+}
+
+.beauty_switch_button:hover {
+    background-color: rgba(164,129,0,.9);
+}
+
+.beauty_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.beauty_pic {
+    width: 45%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.beauty_desc {
+    width: 45%;
+}
+/* End beauty */
+
+
+
+/* Start video_about_hotel */
+
+.video_about_hotel {
+    height: 680px;
+    background-color: #EDE6CC;
+    margin-bottom: 64px;
+}
+
+.video_about_hotel_block {
+    width: 100%;
+    height: 630px;
+    border: 1px solid grey;
+    background-color: #fff;
+}
+/* End video_about_hotel */
+
+
+
+/* Start news */
+
+.news_wrapper {
+    width: 30%;
+    text-align: center;
+}
+
+.news_pic {
+    width: 100%;
+    height: 357px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.news_date {
+    padding-top: 32px;
+}
+
+.news_button {
+    display: block;
+    margin: auto;
+}
+/* End news */
+
+
+
+/* Start insta */
+
+.insta_slider_item {
+    width: 30%;
+    height: 269px;
+    display: inline-block;
+}
+
+.insta_button {
+    display: block;
+    margin: 64px auto 0;
+}
+/* End insta */
+
+
+
+/* Start feedback */
+
+.feedback {
+    background-color: #EDE6CC;
+}
+
+.feedback_slider_item {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.feedback_button {
+    display: block;
+    margin: auto;
+}
+/* End feedback */
+
+
+
+/* Start reward */
+
+.reward_list{
+    display: flex;
+    justify-content: space-around;
+}
+.reward_item {
+    width: 129px;
+    text-align: center;
+}
+.reward_title {
+    margin: 16px 0;
+}
+.reward_status,
+.reward_year {
+    font-size: 12px;
+    line-height: 160%;
+}
+/* End reward */
+
+
+/* Start contacts */
+
+.contacts {
+    background-color: #EDE6CC;
+}
+.contacts .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.map {
+    width: 50%;
+}
+.contacts_wrapper {
+    width: 50%;
+}
+/* End contacts */
+
+
+/* Start footer */
+
+.footer {
+    padding-top: 118px;
+    padding-bottom: 70px;
+}
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_contacts {
+    width: 40%;
+}
+.footer_social,
+.footer_popular,
+.footer_info {
+    width: 20%;
+}
+.footer_logo {
+    display: flex;
+    align-items: center;
+}
+.footer_logo_pic {
+    width: 47px;
+    margin-right: 30px;
+}
+.footer_popular,
+.footer_info {
+    font-size: 14px;
+    line-height: 20px;
+}
+/* End footer */
