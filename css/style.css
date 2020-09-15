@@ -141,6 +141,35 @@ a {
 .hero {
     background: url(../img/main_bg.jpg) no-repeat top;
     background-size: contain;
+    position: relative;
+}
+
+.hero_social {
+    width: 40px;
+    height: 155px;
+    background-color: #4b1600;
+    padding: 0 8px;
+    position: absolute;
+    top: 21px;
+    left: 26px;
+}
+
+.hero_social_item {
+    width: 24px;
+    border-bottom: 1px solid #fff;
+    padding-top: 7px;
+}
+
+.hero_social_item:last-child {
+    border-bottom: none;
+}
+
+.hero_social a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    margin: 0;
 }
 
 .hero_form {
