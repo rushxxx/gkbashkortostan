@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GK Bashkortostan</title>
     
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/ui-kit.css">
     <link rel="stylesheet" href="css/style.css">
@@ -88,7 +91,7 @@
                     </div>
                     <button type="submit" class="hero_form_button large primary default enabled">поиск</button>
                 </form>
-                <div class="hero_slider">
+              <!--   <div class="hero_slider">
                     <div class="hero_slider_item">
                         <div class="hero_slider_pic">
                             <img src="img/hero_slider_01.jpg" alt="Акции выходного дня">
@@ -116,7 +119,73 @@
                             <p class="hero_slider_text">Позвольте себе и своей семье долгожданный летний отдых в формате «Ультра все включено» по выгодной цене!</p>
                         </div>
                     </div>
+                </div> -->
+
+                <div class="hero_slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="hero_slider_item">
+                                <div class="hero_slider_pic">
+                                    <img src="img/hero_slider_01.jpg" alt="Акции выходного дня">
+                                </div>
+                                <div class="hero_slider_desc">
+                                    <h3 class="hero_slider_title">Акции выходного дня</h3>
+                                    <p class="hero_slider_text">Позвольте себе и своей семье долгожданный летний отдых в формате «Ультра все включено» по выгодной цене!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero_slider_item">
+                                <div class="hero_slider_pic">
+                                    <img src="img/hero_slider_02.jpg" alt="">
+                                </div>
+                                <div class="hero_slider_desc">
+                                    <h3 class="hero_slider_title">Акции выходного дня</h3>
+                                    <p class="hero_slider_text">Позвольте себе и своей семье долгожданный летний отдых в формате «Ультра все включено» по выгодной цене!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero_slider_item">
+                                <div class="hero_slider_pic">
+                                    <img src="img/hero_slider_03.jpg" alt="">
+                                </div>
+                                <div class="hero_slider_desc">
+                                    <h3 class="hero_slider_title">Акции выходного дня</h3>
+                                    <p class="hero_slider_text">Позвольте себе и своей семье долгожданный летний отдых в формате «Ультра все включено» по выгодной цене!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero_slider_item">
+                                <div class="hero_slider_pic">
+                                    <img src="img/hero_slider_02.jpg" alt="">
+                                </div>
+                                <div class="hero_slider_desc">
+                                    <h3 class="hero_slider_title">Акции выходного дня</h3>
+                                    <p class="hero_slider_text">Позвольте себе и своей семье долгожданный летний отдых в формате «Ультра все включено» по выгодной цене!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+
+                    <div class="hero_slider_button-next">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Следующий слайд" class="next_arrow">
+                    </div>
+                    <div class="hero_slider_button-prev">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Предыдущий слайд" class="prev_arrow">
+                    </div>
+
                 </div>
+
             </div>
         </section>
 
@@ -358,6 +427,7 @@
                     <li>facebook</li>
                     <li>facebook</li>
                 </ul>
+                <button class="footer_button medium primary">Забронировать номер</button>
             </div>
             <div class="footer_popular">
                 <h5>ПОПУЛЯРНОЕ</h5>
@@ -392,6 +462,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="js/common.js"></script>
 </body>

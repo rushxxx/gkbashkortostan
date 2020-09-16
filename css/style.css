@@ -4,8 +4,7 @@
     font-family: 'Calibre';
     src: local('Calibre Regular'), local('Calibre-Regular'),
         url('../fonts/Calibre-Regular.woff2') format('woff2'),
-        url('../fonts/Calibre-Regular.woff') format('woff'),
-        url('../fonts/Calibre-Regular.ttf') format('truetype');
+        url('../fonts/Calibre-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }
@@ -13,8 +12,7 @@
     font-family: 'Calibre';
     src: local('Calibre Regular Italic'), local('Calibre-Regular-Italic'),
         url('../fonts/Calibre-RegularItalic.woff2') format('woff2'),
-        url('../fonts/Calibre-RegularItalic.woff') format('woff'),
-        url('../fonts/Calibre-RegularItalic.ttf') format('truetype');
+        url('../fonts/Calibre-RegularItalic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
   }
@@ -22,32 +20,32 @@
     font-family: 'Calibre';
     src: local('Calibre Bold'), local('Calibre-Bold'),
         url('../fonts/Calibre-Bold.woff2') format('woff2'),
-        url('../fonts/Calibre-Bold.woff') format('woff'),
-        url('../fonts/Calibre-Bold.ttf') format('truetype');
+        url('../fonts/Calibre-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
   }
-
+  
 /* End fonts */
 
 
 
 /* Start general style */
 html {
-    box-sizing: border-box;
     font-family: Calibre;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: border-box;
 }
+
 section {
     padding: 64px 0;
 }
+
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding: 0 30px;
     margin: auto;
 }
@@ -72,6 +70,8 @@ a {
     color: #4B1600;
 }
 /* End general style */
+
+
 
 
 /* Start header */
@@ -180,7 +180,7 @@ a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
+    margin-bottom: 44px;
 }
 
 .hero_form label {
@@ -214,19 +214,35 @@ a {
 }
 
 .hero_slider {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
+/*    display: flex;
+    justify-content: space-around;*/
+    width: 100%;
+    height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
 }
 
 .hero_slider_pic {
     width: 100%;
     height: 193px;
+    object-fit: cover;
+}
+
+.hero_slider_pic img{
+    width: 100%;
+    height: 193px;
+    object-fit: cover;
 }
 
 .hero_slider_item {
-    width: 30%;
-    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+    /*width: 30%;*/
+    margin: 15px;
+    box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hero_slider_desc {
@@ -246,6 +262,32 @@ a {
     font-size: 14px;
     line-height: 20px;
     margin-top: 16px;
+}
+
+.hero_slider_button-prev,
+.hero_slider_button-next {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 168px;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #828282;
+    background-color: #fff
+}
+
+.hero_slider_button-prev {
+    left: 15px;
+    right: auto;
+}
+
+.hero_slider_button-next {
+    right: 15px;
+    left: auto;
+    transform: rotate(180deg);
 }
 /* End hero */
 
@@ -271,6 +313,7 @@ a {
     width: 267px;
     height: 267px;
     border-radius: 24px 24px 24px 0px;
+    overflow: hidden;
 }
 /* End meed */
 
@@ -297,8 +340,13 @@ a {
 }
 
 .rooms_slider_pic {
-    width: 100%;
     height: 50%;
+}
+
+.rooms_slider_pic img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover
 }
 
 .rooms_slider_desc {
@@ -507,6 +555,9 @@ a {
 .contacts_wrapper {
     width: 50%;
 }
+.contacts .section_title {
+    text-align: left;
+}
 /* End contacts */
 
 
@@ -521,12 +572,12 @@ a {
     justify-content: space-between;
 }
 .footer_contacts {
-    width: 40%;
+    width: 31%;
 }
 .footer_social,
 .footer_popular,
 .footer_info {
-    width: 20%;
+    width: 23%;
 }
 .footer_logo {
     display: flex;
@@ -540,5 +591,11 @@ a {
 .footer_info {
     font-size: 14px;
     line-height: 20px;
+}
+.footer_social ul {
+    margin-bottom: 80px;
+}
+.footer a {
+    color: #000;
 }
 /* End footer */
