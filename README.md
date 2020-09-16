@@ -1,1 +1,1 @@
-# gkbashkortostan
+# https://rushxxx.github.io/gkbashkortostan
