@@ -1,0 +1,217 @@
+.nav_slider_item {
+	position: relative;
+}
+
+.nav_slider_item:before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(75,23,0,.5);
+	z-index: 3;
+}
+
+.nav_slider_item img {
+	width: 100%;
+    height: 496px;
+    object-fit: cover;
+}
+
+.breadcrumb {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50px);
+	display: flex;
+	justify-content: center;
+	z-index: 4;
+}
+
+.breadcrumb a {
+	color: #fff;
+}
+
+.breadcrumb .active {
+	font-weight: bold;
+	color: #f7ba07
+}
+
+.nav_slider_link {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -33px);
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 67px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	z-index: 4;
+}
+
+.nav_slider_link:hover,
+.nav_slider_link:focus {
+	color: #f7ba07;
+    filter: drop-shadow(10px 15px 23px #f7ba07);
+}
+
+.nav_slider_container{
+	position: relative;
+}
+
+.nav_slider_button-next {
+	bottom: 214px;
+	right: 30px;
+	left: auto;
+}
+
+.nav_slider_button-prev {
+	bottom: 214px;
+	left: 30px;
+	right: auto;
+}
+
+
+
+/*  nav slider  start  */
+
+
+/*  welcome  start  */
+
+.welcome_container{
+	display: flex;
+}
+
+.welcome_pic_wrap {
+	width: 50%;
+	margin-right: 77px;
+}
+
+.welcome_pic {
+	height: 560px;
+}
+
+.welcome_wrap p {
+	padding: 0 32px;
+}
+
+.welcome_wrap a {
+	margin-left: 32px;
+}
+/*  welcome  end   */
+
+
+
+
+/*  history_card  start  */
+
+
+.history {
+	background-color: #ede6cc;
+}
+
+.history_card {
+	display: flex;
+	align-items: center;
+}
+
+.history_card_text_wrap {
+	max-width: 500px;
+	margin-right: 90px;
+}
+
+.history_card_text{
+	padding: 0 32px;
+}
+.history_card_pic_wrap {
+	position: relative;
+}
+
+.history_card_pic {
+	min-width: 550px;
+}
+
+.history_year {
+	position: absolute;
+	top: 32px;
+	left: 32px;
+	padding: 12px 10px;
+	background-color: #4b1600;
+	color: #fff;
+}
+/*  history_card  end  */
+
+
+
+/*  extra-serv  start  */
+
+.extra-serv {
+	text-align: center;
+}
+
+.extra-serv_list {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: auto;
+	position: relative;
+}
+
+.extra-serv_list:after {
+	position: absolute;
+	content: "";
+	top: 10px;
+	bottom: 34px;
+	left: 50%;
+	border-left: 1px solid #828282
+}
+
+.extra-serv_item {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.extra-serv_item:nth-child(2n+1) {
+	justify-content: flex-end;
+
+}
+
+.extra-serv_item:nth-child(2n+1) .extra-serv_icon{
+	margin-right: 57px;
+	margin-left: 32px;
+}
+
+.extra-serv_item:nth-child(2n) .extra-serv_icon{
+	order: -1;
+	margin-right: 32px;
+	margin-left: 57px;
+}
+
+
+/*  extra-serv  end  */
+
+
+
+
+
+/*  attractions-by  start  */
+
+.attractions-by {
+	background-color: #ede6cc;
+}
+/*  attractions-by  end  */
+
+
+
+
+
+/*  3d-tour  start  */
+
+
+/*  3d-tour  end  */

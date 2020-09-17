@@ -98,3 +98,28 @@ button.ghost:hover,
 a.ghost:hover {
     color: #735A00;
 }
+
+.slider_button-next,
+.slider_button-prev {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #828282;
+    background-color: #fff;
+}
+
+.slider_button-next {
+    transform: rotate(180deg);
+}
+
+a.regular {
+    font-size: 16px;
+    line-height: 24px;
+    color: #a48100;
+    border-bottom: 1px solid #a48100;
+}

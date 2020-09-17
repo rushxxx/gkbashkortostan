@@ -31,7 +31,7 @@
 
 /* Start general style */
 html {
-    font-family: Calibre;
+    font-family: Calibre, "Open Sans", sans-serif;
 }
 
 *,
@@ -62,12 +62,26 @@ li {
 a {
     text-decoration: none;
 }
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
 .section_title {
     font-weight: bold;
     font-size: 32px;
     line-height: 140%;
     text-align: center;
     color: #4B1600;
+}
+
+.section_desc {
+    text-align: center;
+}
+
+.page_title_invisible {
+    height: 0;
+    margin: 0;
 }
 /* End general style */
 
@@ -78,7 +92,6 @@ a {
 
 .header {
     height: 132px;
-    font-family: Calibre;
 }
 
 .container-header {
@@ -264,30 +277,16 @@ a {
     margin-top: 16px;
 }
 
-.hero_slider_button-prev,
 .hero_slider_button-next {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 168px;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #828282;
-    background-color: #fff
+    top: 160px;
+    right: 15px;
+    left: auto;
 }
 
 .hero_slider_button-prev {
+    top: 160px;
     left: 15px;
     right: auto;
-}
-
-.hero_slider_button-next {
-    right: 15px;
-    left: auto;
-    transform: rotate(180deg);
 }
 /* End hero */
 
