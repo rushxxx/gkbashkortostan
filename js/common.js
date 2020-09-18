@@ -30,3 +30,22 @@ var mySwiper = new Swiper('.nav_slider', {
     prevEl: '.nav_slider_button-prev',
   },
 })
+
+
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 6,
+})
+
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+
+  navigation: {
+    nextEl: '.suite_slider_button-next',
+    prevEl: '.suite_slider_button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs,
+  },
+})
