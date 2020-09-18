@@ -44,12 +44,6 @@ section {
     padding: 64px 0;
 }
 
-.container {
-    max-width: 1200px;
-    padding: 0 30px;
-    margin: auto;
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -66,7 +60,19 @@ a {
 p {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 32px;;
 }
+
+img {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: auto;
+}
+
 .section_title {
     font-weight: bold;
     font-size: 32px;
@@ -76,7 +82,9 @@ p {
 }
 
 .section_desc {
+    max-width: 750px;
     text-align: center;
+    margin: 0 auto 32px;
 }
 
 .page_title_invisible {
@@ -563,7 +571,7 @@ p {
 /* Start footer */
 
 .footer {
-    padding-top: 118px;
+    padding-top: 43px;
     padding-bottom: 70px;
 }
 .footer .container{

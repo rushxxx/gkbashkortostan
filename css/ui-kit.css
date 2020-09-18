@@ -40,6 +40,11 @@ button:hover {
     cursor: pointer;
 }
 
+button.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 button.large,
 a.large {
@@ -77,14 +82,14 @@ a.primary:hover {
 
 button.secondary,
 a.secondary {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #7E7E7E;
+    background-color: transparent;
+    color: #403d37;
+    border: 1px solid #403d37;
 }
 
 button.secondary:hover,
 a.secondary:hover {
-    background-color: #7E7E7E;
+    background-color: #403d37;
     color: #fff;
 }
 
