@@ -49,3 +49,20 @@ var galleryTop = new Swiper('.gallery-top', {
     swiper: galleryThumbs,
   },
 })
+
+var mySwiper = new Swiper('.promo_slider', {
+  // Optional parameters
+  slidesPerView: 3,
+  spaceBetween: 1,
+  loop :true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.promo_slider_button-next',
+    prevEl: '.promo_slider_button-prev',
+  },
+})

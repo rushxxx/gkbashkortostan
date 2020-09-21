@@ -18,6 +18,7 @@
 	width: 100%;
 	position: relative;
 	overflow: hidden;
+	margin-bottom: 64px;
 }
 
 .nav_slider_item {
