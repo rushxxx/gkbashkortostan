@@ -33,22 +33,22 @@ var mySwiper = new Swiper('.nav_slider', {
 
 
 
-var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 10,
-  slidesPerView: 6,
-})
-
-var galleryTop = new Swiper('.gallery-top', {
-  spaceBetween: 10,
-
-  navigation: {
-    nextEl: '.suite_slider_button-next',
-    prevEl: '.suite_slider_button-prev',
-  },
-  thumbs: {
-    swiper: galleryThumbs,
-  },
-})
+// var galleryThumbs = new Swiper('.gallery-thumbs', {
+//   spaceBetween: 10,
+//   slidesPerView: 6,
+// })
+//
+// var galleryTop = new Swiper('.gallery-top', {
+//   spaceBetween: 10,
+//
+//   navigation: {
+//     nextEl: '.suite_slider_button-next',
+//     prevEl: '.suite_slider_button-prev',
+//   },
+//   thumbs: {
+//     swiper: galleryThumbs,
+//   },
+// })
 
 var mySwiper = new Swiper('.promo_slider', {
   // Optional parameters
@@ -64,5 +64,55 @@ var mySwiper = new Swiper('.promo_slider', {
   navigation: {
     nextEl: '.promo_slider_button-next',
     prevEl: '.promo_slider_button-prev',
+  },
+})
+
+
+var galleryThumbs1 = new Swiper('.lobby_bar_gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 5,
+})
+
+var galleryTop1 = new Swiper('.lobby_bar_gallery-top', {
+  spaceBetween: 10,
+
+  navigation: {
+    nextEl: '.thumbs_card_slider_button-next',
+    prevEl: '.thumbs_card_slider_button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs1,
+  },
+})
+
+
+var galleryThumbs2 = new Swiper('.banquet_menu_gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 5,
+})
+
+var galleryTop2 = new Swiper('.banquet_menu_gallery-top', {
+  spaceBetween: 10,
+
+  navigation: {
+    nextEl: '.thumbs_card_slider_button-next',
+    prevEl: '.thumbs_card_slider_button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs2,
+  },
+})
+
+var galleryThumbs3 = new Swiper('.seating_thumbs', {
+  spaceBetween: 16,
+  slidesPerView: 5,
+  followFinger: false,
+})
+
+var galleryTop3 = new Swiper('.seating_top', {
+  spaceBetween: 10,
+
+  thumbs: {
+    swiper: galleryThumbs3,
   },
 })
