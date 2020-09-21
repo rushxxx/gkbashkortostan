@@ -31,7 +31,7 @@
 
 /* Start general style */
 html {
-    font-family: Calibre, "Open Sans", sans-serif;
+    font-family: Graphik LCG, Calibre, "Open Sans", sans-serif;
 }
 
 *,
@@ -42,6 +42,11 @@ html {
 
 section {
     padding: 64px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -73,6 +78,15 @@ img {
     margin: auto;
 }
 
+.page_title {
+    text-align: center;
+}
+
+.page_title_invisible {
+    height: 0;
+    margin: 0;
+}
+
 .section_title {
     font-weight: bold;
     font-size: 32px;
@@ -87,10 +101,7 @@ img {
     margin: 0 auto 32px;
 }
 
-.page_title_invisible {
-    height: 0;
-    margin: 0;
-}
+
 /* End general style */
 
 
