@@ -93,6 +93,11 @@
 
 /*  thumbs_card_slider start  */
 
+.thumbs_card_title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+}
 
 .thumbs_card_slider{
     width: 50%;
@@ -161,7 +166,6 @@
 
 .seating_slider {
     width: 80%;
-    height: 730px;
     margin: 0 auto;
 }
 
@@ -173,5 +177,10 @@
 
 .seating_top {
     height: 90%;
+}
+
+.seating_pic {
+    width: 100%;
+    object-fit: cover;
 }
 /*  seating_slider end  */
