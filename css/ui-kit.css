@@ -36,6 +36,14 @@ button {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+a.large,
+a.medium,
+a.small{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 button:hover {
     cursor: pointer;
 }
@@ -51,7 +59,6 @@ a.large {
     padding: 16px 40px;
     font-size: 16px;
     line-height: 24px;
-
 }
 
 button.medium,

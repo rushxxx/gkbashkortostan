@@ -145,8 +145,12 @@
 
 .main_menu_card_title {
     position: absolute;
-    bottom: 12px;
-    left: 24px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px 24px;
+    color: #fff;
+    background-color: rgba(53,23,18,.5);
 }
 /*  restaurant_main_menu end  */
 

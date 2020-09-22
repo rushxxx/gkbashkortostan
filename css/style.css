@@ -339,6 +339,10 @@ img {
 
 /* Start rooms */
 
+.rooms .container {
+    text-align: center;
+}
+
 .rooms_desc{
     font-size: 16px;
     text-align: center;
@@ -352,7 +356,6 @@ img {
 
 .rooms_slider_item {
     width: 45%;
-    height: 640px;
     background: #EDE6CC;
     border: 1px solid #E0E0E0;
 }
@@ -382,9 +385,8 @@ img {
 }
 
 .rooms_button {
-    display: block;
+    display: inline-block;
     margin: 60px auto 0;
-
 }
 /* End rooms */
 
