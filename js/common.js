@@ -116,3 +116,10 @@ var galleryTop3 = new Swiper('.seating_top', {
     swiper: galleryThumbs3,
   },
 })
+
+//  swiper end
+
+
+// set today and tomorrow date in hero form inputs
+document.getElementById('check-in').valueAsDate = new Date();
+document.getElementById('check-out').valueAsDate = new Date(Date.now() + (24 * 3600 *1000)) ;
