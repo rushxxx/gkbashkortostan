@@ -30,7 +30,7 @@
 
 
 /* Start general style */
-html {
+body {
     font-family: Graphik LCG, Calibre, "Open Sans", sans-serif;
 }
 
@@ -132,19 +132,24 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    flex-grow: 1;
 }
 
 .header_section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #4B1600;
 }
 
+.logo_text_wrap {
+    max-width: 228px;
+}
+
 .logo_text {
-    width: 228px;
+    width: 100%;
     height: 50px;
-    background: url(../img/logo_text.svg) no-repeat center;
-    background-size: cover;
+    object-fit: contain;
 }
 
 .header_button {
@@ -153,6 +158,7 @@ img {
 
 .header_menu_list {
     display: flex;
+    justify-content: space-between;
 }
 
 .header_menu_link {
@@ -174,6 +180,7 @@ img {
     background: url(../img/main_bg.jpg) no-repeat top;
     background-size: contain;
     position: relative;
+    padding-top: 0;
 }
 
 .hero_social {
