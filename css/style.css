@@ -1,29 +1,40 @@
 /* Start fonts */
 
 @font-face {
-    font-family: 'Calibre';
-    src: local('Calibre Regular'), local('Calibre-Regular'),
-        url('../fonts/Calibre-Regular.woff2') format('woff2'),
-        url('../fonts/Calibre-Regular.woff') format('woff');
-    font-weight: 400;
+    font-family: 'Calibri';
+    src: local('Calibri Light'), local('Calibri-Light'),
+    url('../fonts/Calibri-Light.woff2') format('woff2'),
+    url('../fonts/Calibri-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
-  }
-  @font-face {
-    font-family: 'Calibre';
-    src: local('Calibre Regular Italic'), local('Calibre-Regular-Italic'),
-        url('../fonts/Calibre-RegularItalic.woff2') format('woff2'),
-        url('../fonts/Calibre-RegularItalic.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-  }
+}
+
 @font-face {
-    font-family: 'Calibre';
-    src: local('Calibre Bold'), local('Calibre-Bold'),
-        url('../fonts/Calibre-Bold.woff2') format('woff2'),
-        url('../fonts/Calibre-Bold.woff') format('woff');
-    font-weight: 700;
+    font-family: 'Calibri';
+    src: local('Calibri'),
+    url('../fonts/Calibri.woff2') format('woff2'),
+    url('../fonts/Calibri.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-  }
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: local('Calibri Italic'), local('Calibri-Italic'),
+    url('../fonts/Calibri-Italic.woff2') format('woff2'),
+    url('../fonts/Calibri-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: local('Calibri Bold'), local('Calibri-Bold'),
+    url('../fonts/Calibri-Bold.woff2') format('woff2'),
+    url('../fonts/Calibri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
   
 /* End fonts */
 
@@ -31,7 +42,7 @@
 
 /* Start general style */
 body {
-    font-family: Graphik LCG, Calibre, "Open Sans", sans-serif;
+    font-family: Calibri, "Open Sans", sans-serif;
 }
 
 *,
@@ -60,6 +71,7 @@ li {
 
 a {
     text-decoration: none;
+    color: #A48100;
 }
 
 p {
@@ -93,6 +105,7 @@ img {
     line-height: 140%;
     text-align: center;
     color: #4B1600;
+    margin-bottom: 32px;
 }
 
 .section_desc {
@@ -253,10 +266,8 @@ img {
 }
 
 .hero_slider {
-/*    display: flex;
-    justify-content: space-around;*/
     width: 100%;
-    height: 440px;
+    height: 470px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -461,6 +472,7 @@ img {
     height: 680px;
     background-color: #EDE6CC;
     margin-bottom: 64px;
+    padding-top: 32px;
 }
 
 .video_about_hotel_block {
@@ -507,6 +519,10 @@ img {
 
 /* Start insta */
 
+.insta {
+    padding-top: 0;
+}
+
 .insta_slider {
     display: flex;
     justify-content: space-between;
@@ -536,6 +552,34 @@ img {
     width: 70%;
     text-align: center;
     margin: auto;
+}
+
+.feedback_text-all {
+    position: relative;
+    display: inline-block;
+    line-height: 150%;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.feedback_text-all:after {
+    width: 0;
+    position: absolute;
+    content: "";
+    top: auto;
+    left: 0;
+    bottom: 0;
+    border-bottom: 1px solid #A48100;
+    transition: all .3s;
+}
+
+.feedback_text-all:hover {
+    color: #735A00;
+}
+
+.feedback_text-all:hover:after {
+    width: 100%;
+    border-color: #735A00;
 }
 
 .feedback_button {
