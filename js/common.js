@@ -1,17 +1,114 @@
 var mySwiper = new Swiper('.hero_slider', {
   // Optional parameters
-  slidesPerView: 3,
+  // slidesPerView: 3,
   spaceBetween: 1,
   loop :true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    560: {
+      slidesPerView: 2,
+    },
+    920: {
+      slidesPerView: 3,
+      // spaceBetween: 40
+    }
+  },
 
   // Navigation arrows
   navigation: {
     nextEl: '.hero_slider_button-next',
     prevEl: '.hero_slider_button-prev',
+  },
+})
+
+var roomsSlider = new Swiper('.rooms_slider', {
+  // Optional parameters
+  // slidesPerView: 3,
+  spaceBetween: 1,
+  autoHeight: false,
+  loop :true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 480px
+    560: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 640px
+    930: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    }
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.rooms_slider_button-next',
+    prevEl: '.rooms_slider_button-prev',
+  },
+})
+
+var instaSlider = new Swiper('.insta_slider', {
+  // Optional parameters
+  // slidesPerView: 3,
+  spaceBetween: 30,
+  loop :true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    560: {
+      slidesPerView: 2,
+    },
+    920: {
+      slidesPerView: 3,
+    }
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.insta_slider_button-next',
+    prevEl: '.insta_slider_button-prev',
+  },
+})
+
+var feedbackSlider = new Swiper('.feedback_slider', {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop :true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // breakpoints: {
+  //   320: {
+  //     slidesPerView: 1,
+  //   },
+  //   560: {
+  //     slidesPerView: 2,
+  //   },
+  //   920: {
+  //     slidesPerView: 3,
+  //   }
+  // },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.feedback_slider_button-next',
+    prevEl: '.feedback_slider_button-prev',
   },
 })
 

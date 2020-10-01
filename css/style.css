@@ -135,6 +135,7 @@ img {
 .logo {
     width: 103px;
     height: 103px;
+    flex-shrink: 0;
     background: url(../img/logo.png) no-repeat center;
     background-size: cover;
 }
@@ -146,10 +147,12 @@ img {
     flex-direction: column;
     justify-content: space-around;
     flex-grow: 1;
+    position: relative;
 }
 
 .header_section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #4B1600;
@@ -163,10 +166,41 @@ img {
     width: 100%;
     height: 50px;
     object-fit: contain;
+    order: 1;
 }
 
 .header_button {
     transform: translateY(1px);
+    order: 3;
+}
+
+.header_contacts-phone{
+    order: 3;
+}
+
+.header_contacts-adress {
+    order: 3;
+}
+
+.language_toogle {
+    order: 2;
+}
+
+.nav-menu_burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    padding: 3px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    order: 4;
+}
+
+.nav-menu_burger span{
+    width: 80%;
+    border-bottom: 3px solid #000;
 }
 
 .header_menu_list {
@@ -190,11 +224,22 @@ img {
 /* Start hero */
 
 .hero {
-    background: url(../img/main_bg.jpg) no-repeat top;
-    background-size: contain;
     position: relative;
     padding-top: 0;
 }
+
+.hero-bg_wrapper {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.hero-bg_pic {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
 
 .hero_social {
     width: 40px;
@@ -225,7 +270,7 @@ img {
 }
 
 .hero_form {
-    width: 50%;
+    width: 500px;
     background-color: rgba(75, 22, 0, 0.75);
     padding: 32px 64px;
     box-sizing: border-box;
@@ -337,6 +382,7 @@ img {
 
 .meed .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -347,9 +393,14 @@ img {
 
 .meed_pic {
     width: 267px;
-    height: 267px;
+    /*height: 267px;*/
     border-radius: 24px 24px 24px 0px;
     overflow: hidden;
+    margin: 0 32px 32px;
+}
+
+.meed_pic img{
+    width: 100%;
 }
 /* End meed */
 
@@ -370,6 +421,18 @@ img {
     margin-top: 48px;
     display: flex;
     justify-content: space-around;
+    position: relative;
+    overflow: hidden;
+}
+
+.rooms_slider .slider_button-prev {
+    top: 41%;
+    left: 0;
+}
+
+.rooms_slider .slider_button-next {
+    top: 41%;
+    right: 0;
 }
 
 .rooms_slider_item {
@@ -414,7 +477,7 @@ img {
 
 .beauty_switch_list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 66px;
 }
@@ -423,6 +486,7 @@ img {
     width: 160px;
     height: 120px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .beauty_switch_button {
@@ -489,11 +553,12 @@ img {
 
 .news_wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .news_item {
-    width: 30%;
+    width: 300px;
     text-align: center;
 }
 
@@ -524,14 +589,30 @@ img {
 }
 
 .insta_slider {
-    display: flex;
-    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+
 }
 
 .insta_slider_item {
     width: 30%;
     height: 269px;
     display: inline-block;
+}
+
+.insta_slider_item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.insta_slider_button-next {
+    top: 44%;
+    right: 0;
+}
+
+.insta_slider_button-prev {
+    top: 44%;
+    left: 0;
 }
 
 .insta_button {
@@ -548,9 +629,27 @@ img {
     background-color: #EDE6CC;
 }
 
+.feedback_slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback_slider_button-next {
+    top: 44%;
+    right: 0;
+}
+
+.feedback_slider_button-prev {
+    top: 44%;
+}
+
 .feedback_slider_item {
-    width: 70%;
     text-align: center;
+    margin: auto;
+}
+
+.feedback_text {
+    max-width: 750px;
     margin: auto;
 }
 
@@ -594,6 +693,7 @@ img {
 
 .reward_list{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .reward_item {
@@ -640,6 +740,7 @@ img {
 }
 .footer .container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer_contacts {
