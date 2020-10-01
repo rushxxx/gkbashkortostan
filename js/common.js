@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.hero_slider', {
+var heroSlider = new Swiper('.hero_slider', {
   // Optional parameters
   // slidesPerView: 3,
   spaceBetween: 1,
@@ -220,3 +220,16 @@ var galleryTop3 = new Swiper('.seating_top', {
 // set today and tomorrow date in hero form inputs
 document.getElementById('check-in').valueAsDate = new Date();
 document.getElementById('check-out').valueAsDate = new Date(Date.now() + (24 * 3600 *1000)) ;
+
+ // burger menu
+let navMenuBurger = document.getElementById('nav-menu_burger')
+let headerMenu = document.getElementById('header_menu')
+let menuClose = document.getElementById('menu-close')
+
+navMenuBurger.addEventListener('click', () => {
+  headerMenu.classList.toggle('active')
+})
+
+menuClose.addEventListener('click', () => {
+  headerMenu.classList.toggle('active')
+})
