@@ -1,6 +1,7 @@
-.suite {
-  padding-top: 0;
-  text-align: center;
+.room_desc {
+    padding-top: 0;
+    text-align: center;
+    margin-bottom: 64px;
 }
 
 .extra-serv-suite{

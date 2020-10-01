@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/ui-kit.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_queries.css">
 
 </head>
 <body>
@@ -19,12 +20,18 @@
             <div class="logo"></div>
             <div class="header_wrapper">
                 <div class="header_section">
-                    <div class="logo_text"></div>
+                    <div class="logo_text_wrap">
+                        <img src="img/logo_text.png" alt="Гостиничный комплекс Башкирия" class="logo_text">
+                    </div>
                     <h4 class="header_contacts-phone">+7 (347) 279-00-10</h4>
                     <h4 class="header_contacts-adress">г. Уфа, ул. Ленина, 25/29</h4>
                     <button class="medium ghost default enabled language_toogle">РУС/eng</button>
+                    <div class="nav-menu_burger">
+                        <span></span><span></span><span></span>
+                    </div>
                     <button class="large primary default enabled header_button">Забронировать номер</button>
                 </div>
+
                 <nav class="header_menu">
                     <ul class="header_menu_list">
                         <li class="header_menu_item"><a href="page_about.html" class="medium ghost header_menu_link">Об отеле</a></li>
@@ -45,6 +52,9 @@
 
     <main class="main">
         <section class="hero">
+            <div class="hero-bg_wrapper">
+                <img src="img/main_bg.jpg" alt="Гостиничный комплекс Башкирия" class="hero-bg_pic">
+            </div>
             <div class="container">
                 <ul class="hero_social">
                     <li class="hero_social_item">
@@ -79,15 +89,15 @@
                     </div>
                     <div class="hero_form_group">
                         <label for="room">Номера</label>
-                        <input type="text" name="room" id="room">
+                        <input type="text" name="room" id="room" value="1">
                     </div>
                     <div class="hero_form_group-half">
                         <label for="child">Дети</label>
-                        <input type="text" name="child" id="child">
+                        <input type="text" name="child" id="child" value="1">
                     </div>
                     <div class="hero_form_group-half">
                         <label for="adult">Взрослые</label>
-                        <input type="text" name="adult" id="adult">
+                        <input type="text" name="adult" id="adult" value="1">
                     </div>
                     <button type="submit" class="hero_form_button large primary default enabled">поиск</button>
                 </form>
@@ -180,27 +190,40 @@
                     <br>Мы предлагаем стандартные и двухместные номера, а также люксы и апартаменты. 
                     <br>Наши гости, несомненно, оценят уютные и просторные номера, где будут чувствовать себя как дома.</p>
                 <div class="rooms_slider">
-                    <div class="rooms_slider_item">
-                        <div class="rooms_slider_pic">
-                            <img src="img/rooms_slider_01.jpg" alt="Одноместный номер с кроватью Queen Size">
+                    <div class="swiper-wrapper">
+                        <div class="rooms_slider_item swiper-slide">
+                            <div class="rooms_slider_pic">
+                                <img src="img/rooms_slider_01.jpg" alt="Одноместный номер с кроватью Queen Size">
+                            </div>
+                            <div class="rooms_slider_desc">
+                                <h3 class="rooms_slider_title">Одноместный номер с кроватью Queen Size</h3>
+                                <p class="rooms_slider_text">Современный и уютный однокомнатный номер площадью от 21 м2 предназначен для обеспечения максимального комфорта. Представляет собой идеальное место для отдыха.</p>
+                                <button class="medium primary">Забронировать</button>
+                                <button class="medium secondary">Подробнее</button>
+                            </div>
                         </div>
-                        <div class="rooms_slider_desc">
-                            <h3 class="rooms_slider_title">Одноместный номер с кроватью Queen Size</h3>
-                            <p class="rooms_slider_text">Современный и уютный однокомнатный номер площадью от 21 м2 предназначен для обеспечения максимального комфорта. Представляет собой идеальное место для отдыха.</p>
-                            <button class="medium primary">Забронировать</button>
-                            <button class="medium secondary">Подробнее</button>
+                        <div class="rooms_slider_item swiper-slide">
+                            <div class="rooms_slider_pic">
+                                <img src="img/rooms_slider_02.jpg" alt="Одноместный номер с кроватью Queen Size">
+                            </div>
+                            <div class="rooms_slider_desc">
+                                <h3 class="rooms_slider_title">Номер (мансардный) с двуспальной кроватью King Size</h3>
+                                <p class="rooms_slider_text">Уютные и элегантные номера от 39м2, оснащенные современной мебелью, обеспечат каждому гостю приятное пребывание в гостинице Башкирия.</p>
+                                <button class="medium primary">Забронировать</button>
+                                <button class="medium secondary">Подробнее</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="rooms_slider_item">
-                        <div class="rooms_slider_pic">
-                            <img src="img/rooms_slider_02.jpg" alt="Одноместный номер с кроватью Queen Size">
-                        </div>
-                        <div class="rooms_slider_desc">
-                            <h3 class="rooms_slider_title">Номер (мансардный) с двуспальной кроватью King Size</h3>
-                            <p class="rooms_slider_text">Уютные и элегантные номера от 39м2, оснащенные современной мебелью, обеспечат каждому гостю приятное пребывание в гостинице Башкирия.</p>
-                            <button class="medium primary">Забронировать</button>
-                            <button class="medium secondary">Подробнее</button>
-                        </div>
+
+                    <!-- If we need pagination -->
+<!--                    <div class="swiper-pagination"></div>-->
+
+                    <!-- If we need navigation buttons -->
+                    <div class="rooms_slider_button-next slider_button-next">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Следующий слайд" class="next_arrow">
+                    </div>
+                    <div class="rooms_slider_button-prev slider_button-prev">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Предыдущий слайд" class="prev_arrow">
                     </div>
                 </div>
                 <a href="page_rooms.html" class="rooms_button medium secondary">Смотреть все</a>
@@ -289,15 +312,24 @@
             <div class="container">
                 <h2 class="section_title">Мы в instagram</h2>
                 <div class="insta_slider">
-                    <a href="#" class="insta_slider_item">
-                        <img src="img/insta_01.jpg" alt="instagram 01 ???">
-                    </a>
-                    <a href="#" class="insta_slider_item">
-                        <img src="img/insta_02.jpg" alt="instagram 01 ???">
-                    </a>
-                    <a href="#" class="insta_slider_item">
-                        <img src="img/insta_03.jpg" alt="instagram 01 ???">
-                    </a>
+                    <div class="swiper-wrapper">
+                        <a href="#" class="insta_slider_item swiper-slide">
+                            <img src="img/insta_01.jpg" alt="instagram 01 ???">
+                        </a>
+                        <a href="#" class="insta_slider_item swiper-slide">
+                            <img src="img/insta_02.jpg" alt="instagram 01 ???">
+                        </a>
+                        <a href="#" class="insta_slider_item swiper-slide">
+                            <img src="img/insta_03.jpg" alt="instagram 01 ???">
+                        </a>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="insta_slider_button-next slider_button-next">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Следующий слайд" class="next_arrow">
+                    </div>
+                    <div class="insta_slider_button-prev slider_button-prev">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Предыдущий слайд" class="prev_arrow">
+                    </div>
                 </div>
                 <button class="insta_button medium secondary default enabled">Смотреть все</button>
             </div>
@@ -307,13 +339,29 @@
             <div class="container">
                 <h2 class="section_title">Отзывы гостей</h2>
                 <div class="feedback_slider">
-                    <div class="feedback_slider_item">
-                        <p class="feedback_text">Оставлял отзыв в прошлом году, это был первый отзыв в жизни вызванный полученным УДОВОЛЬСТВИЕМ от отдыха. В этом году решил проэксперементировать и повёз семью в Срутник в Сочи обновившийся до 4* , ребят, от ресепшина и ресторана до супер анимации, если Спутник- 4* , то у вас все 10*, если отдых в отелях Алеан, то только у Вас, Биариц-Вы лучшие!!!</p>
-                        <a href="#" class="feedback_text-all">Прочитать отзыв до конца</a>
-                         <h4 class="feedback_owner">Сергей Щербинин, Будённовск , 01.07.2020 19:59:32</h4>
+                    <div class="swiper-wrapper">
+                        <div class="feedback_slider_item swiper-slide">
+                            <p class="feedback_text">Оставлял отзыв в прошлом году, это был первый отзыв в жизни вызванный полученным УДОВОЛЬСТВИЕМ от отдыха. В этом году решил проэксперементировать и повёз семью в Срутник в Сочи обновившийся до 4* , ребят, от ресепшина и ресторана до супер анимации, если Спутник- 4* , то у вас все 10*, если отдых в отелях Алеан, то только у Вас, Биариц-Вы лучшие!!!</p>
+                            <a href="#!" class="feedback_text-all">Прочитать отзыв до конца</a>
+                            <h4 class="feedback_owner">Сергей Щербинин, Будённовск , 01.07.2020 19:59:32</h4>
+                        </div>
+
+                        <div class="feedback_slider_item swiper-slide">
+                            <p class="feedback_text">Оставлял отзыв в прошлом году, это был первый отзыв в жизни вызванный полученным УДОВОЛЬСТВИЕМ от отдыха. В этом году решил проэксперементировать и повёз семью в Срутник в Сочи обновившийся до 4* , ребят, от ресепшина и ресторана до супер анимации, если Спутник- 4* , то у вас все 10*, если отдых в отелях Алеан, то только у Вас, Биариц-Вы лучшие!!!</p>
+                            <a href="#!" class="feedback_text-all">Прочитать отзыв до конца</a>
+                            <h4 class="feedback_owner">Сергей Щербинин, Будённовск , 01.07.2020 19:59:32</h4>
+                        </div>
                     </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="feedback_slider_button-next slider_button-next">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Следующий слайд" class="next_arrow">
+                    </div>
+                    <div class="feedback_slider_button-prev slider_button-prev">
+                        <img src="img/icon/arrow-left-ico.svg" alt="Предыдущий слайд" class="prev_arrow">
+                    </div>
+
                 </div>
-                <button class="feedback_button medium primary default enabled">Оставить отзыв</button>
+                <button class="feedback_button medium primary">Оставить отзыв</button>
             </div>
         </section>
 
